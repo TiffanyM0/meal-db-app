@@ -11,7 +11,10 @@
   font-size: large;
 }
 
-
+.navBar a {
+  padding: 5%;
+  align-items: center;
+}
 
 .category {
   display: flex;
@@ -29,9 +32,6 @@
   justify-content: center;
 }
 
-.meal-item {
-  margin: 10px;
-}
 
 .meals-container {
   display: flex;

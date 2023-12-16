@@ -1,6 +1,13 @@
 import React, {forwardRef} from 'react';
 
-const FilterMeal = forwardRef(({ meals, handleMealClick }, ref)  => {
+const FilterMeal = forwardRef(({ meals, handleMealClick, setMeal }, ref)  => {
+  if (meals === null || meals.length === 0) {
+    return (
+      <div>
+        <p>Recipe not available</p>
+      </div>
+    )
+  }
     return ( 
    <div>
       <h2>Filtered Meals</h2>

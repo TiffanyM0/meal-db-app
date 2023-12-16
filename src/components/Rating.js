@@ -1,4 +1,4 @@
-function Rating({ rating, handleRatingChange }) {
+export default function Rating({ rating, handleRatingChange }) {
     return (
       <div>
         <label htmlFor="rating">Rating:</label>
@@ -13,5 +13,3 @@ function Rating({ rating, handleRatingChange }) {
       </div>
     );
   }
-  
-  export default Rating;
